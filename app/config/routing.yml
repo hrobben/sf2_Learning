@@ -10,3 +10,12 @@ home:
 contact:
     path:     /contact
     defaults: { _controller: AppBundle:Main:contact }
+
+# app/config/routing.yml
+blog_list:
+    path:     /blog
+    defaults: { _controller: AppBundle:Blog:list }
+
+blog_show:
+    path:     /blog/show/{id}
+    defaults: { _controller: AppBundle:Blog:show }

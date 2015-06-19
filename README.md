@@ -12,3 +12,7 @@ I'am a huge fan of MVC OOP development PHP, now i am using the frameworks which 
  Prefered Frameworks Symfony 2 and Laravel 5....
  
  I like to work with Sublime but my most favorite editor is PHPStorm.
+ 
+ 
+ Added:
+ - blog and twig options.....
