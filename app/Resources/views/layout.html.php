@@ -1,9 +1,10 @@
 <?php
-<!-- app/Resources/views/layout.html.php -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title><?php echo $view['slots']->output(
+<
+!--app/Resources / views / layout . html . php-->
+<!DOCTYPE html >
+<html >
+    <head >
+        <title ><?php echo $view['slots']->output(
     'title',
     'Default title'
 ) ?></title>
