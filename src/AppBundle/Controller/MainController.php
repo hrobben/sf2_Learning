@@ -7,6 +7,6 @@ class MainController
 {
     public function contactAction()
     {
-        return new Response('<h1>Contact us!</h1>');
+        return new Response('<h1>Contact Henry Robben 06 10240983!</h1>');
     }
 }
