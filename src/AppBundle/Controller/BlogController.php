@@ -16,6 +16,10 @@ class BlogController extends Controller
         return $this->render('Blog/list.html.php', array('posts' => $posts));
     }
 
+    /**
+     * @Route("/blog/{slug}", name="blog_show")
+     */
+    // public function showAction($slug)
     public function showAction($id)
     {
         $post = $this->get('doctrine')

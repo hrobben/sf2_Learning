@@ -74,3 +74,8 @@ The directory structure of a bundle is simple and flexible. By default, the bund
 
 :Tests/
 - Holds all tests for the bundle.
+
+
+Request bundles:
+================
+php app/console debug:container log   // to see list of available bundles.
