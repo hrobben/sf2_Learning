@@ -16,3 +16,31 @@ I'am a huge fan of MVC OOP development PHP, now i am using the frameworks which 
  
  Added:
  - blog and twig options.....
+ 
+ routes:  /         homepage
+          /contact  contact page
+          /blog     blog total page
+          /blog/show/{id}      single article.
+          
+ Added: 
+ - random testing.
+ 
+ routes:  /random/10    gives a random number on page...
+ 
+ 
+ To see how routing is gowing look into app/config/routing.yml
+ 
+ some used commands terminal:
+ php app/console server:run                         // running the webserver on port 8000  http://localhost:8000
+ php app/console cache:clear --env=prod --no-debug  // clear cache in production running via app.php (production)   app_dev.php (development).
+ php app/console generate:bundle --namespace=Acme/DemoBundle --format=yml   // to install DemoBundle into Symfony 2.
+ 
+ Structure of Symfony 2:
+ app/
+ This directory contains the application configuration.
+ src/
+ All the project PHP code is stored under this directory.
+ vendor/
+ Any vendor libraries are placed here by convention.
+ web/
+ This is the web root directory and contains any publicly accessible files.
