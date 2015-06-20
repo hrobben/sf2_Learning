@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class BlogController extends Controller
 {
@@ -19,8 +20,7 @@ class BlogController extends Controller
     /**
      * @Route("/blog/{slug}", name="blog_show")
      */
-    // public function showAction($slug)
-    public function showAction($id)
+    public function showAction($slug)
     {
         $post = $this->get('doctrine')
             ->getManager()

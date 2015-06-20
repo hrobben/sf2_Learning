@@ -79,3 +79,5 @@ The directory structure of a bundle is simple and flexible. By default, the bund
 Request bundles:
 ================
 php app/console debug:container log   // to see list of available bundles.
+
+php app/console debug:router    // to see list of available to use routers.
