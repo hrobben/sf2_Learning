@@ -27,3 +27,6 @@ blog_list:
 blog_show:
     path:     /blog/show/{id}
     defaults: { _controller: AppBundle:Blog:show }
+
+logout:
+    path:   /logout
