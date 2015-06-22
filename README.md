@@ -150,7 +150,7 @@ Unit testing and Functional testing.
  
 #Start testing dbase, login for a blog (todo)
  
-Trying to implement the knowledge into a blog sit.
+Trying to implement the knowledge into a blog sit. (only testing proposal to implement in future production site)
 
  Dbase build setup:
 
