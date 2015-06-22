@@ -32,11 +32,20 @@ I'am a huge fan of MVC OOP development PHP, now using the frameworks and learnin
  
  routes:  /random/10    gives a random number on page...
  
+ routes security:
+ 
+ /admin   or   /login      gives a login form, only one time with 4 tries!
+ 
+ /logout                   gives a redirect to home page after logout set inside security.yml
+ 
  To see how routing is gowing look into app/config/routing.yml
  
 some used commands terminal:
+
 - php app/console server:run                         // running the webserver on port 8000  http://localhost:8000
+
 - php app/console cache:clear --env=prod --no-debug  // clear cache in production running via app.php (production)   app_dev.php (development).
+
 - php app/console generate:bundle --namespace=Acme/DemoBundle --format=yml   // to install DemoBundle into Symfony 2.
  
 Structure of Symfony 2:
