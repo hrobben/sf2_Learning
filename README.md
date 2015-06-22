@@ -3,11 +3,11 @@ my_project
 
 A Symfony project created on June 20, 2015, 5:18 pm.
 
-While reading the SF2 site start reading the book and did the testing on this branch.
+While reading the SF2 site, started reading the book and did the testing on "my_project".
 
 Henry Robben Learning Symfony 2 Framework together with Laravel.
 
-I'am a huge fan of MVC OOP development PHP, now i am using the frameworks which i (and a lot others I saw on the internet) am learning to embrase.
+I'am a huge fan of MVC OOP development PHP, now using the frameworks and learning to use them.
  
  Prefered Frameworks Symfony 2 and Laravel 5....
  
@@ -81,3 +81,79 @@ Request bundles:
 php app/console debug:container log   // to see list of available bundles.
 
 php app/console debug:router    // to see list of available to use routers.
+
+Twig syntax checking:
+=====================
+You can check by filename:
+
+ $ php app/console twig:lint app/Resources/views/article/recent_list.html.twig
+
+or by directory:
+
+ $ php app/console twig:lint app/Resources/views
+ 
+ 
+Database with Doctrine:
+=======================
+Create a dbase out of params:
+
+ $ php app/console doctrine:database:create
+ 
+
+# MySQL Version 5.5.3 introduced "utf8mb4", which is recommended
+collation-server     = utf8mb4_general_ci # Replaces utf8_general_ci
+
+character-set-server = utf8mb4            # Replaces utf8
+
+# Propel provides the following hooks:
+To install Propel, read [Working With Symfony2] (http://propelorm.org/Propel/cookbook/symfony2/working-with-symfony2.html#installation) on the Propel documentation
+
+preInsert()
+
+ Code executed before insertion of a new object.
+
+postInsert()
+
+ Code executed after insertion of a new object.
+
+preUpdate()
+
+ Code executed before update of an existing object.
+
+postUpdate()
+
+ Code executed after update of an existing object.
+
+preSave()
+
+ Code executed before saving an object (new or existing).
+
+postSave()
+
+ Code executed after saving an object (new or existing).
+
+preDelete()
+
+ Code executed before deleting an object.
+
+postDelete()
+
+ Code executed after deleting an object.
+ 
+#PHPUnit testing
+
+Unit testing and Functional testing.
+ 
+#Validation constraints
+ 
+ Look in the book [validations] (http://symfony.com/doc/current/book/validation.html)
+ 
+#Start testing dbase, login for a blog
+ 
+Trying to implement the knowledge into a blog sit.
+
+ Dbase build setup:
+
+ - User => fields auto id increment (username, password, first_name, last_name, role, register_date, last_login_date, avatar)
+
+ - Articles => fields auto id increment (user_id, title, article, created_at, publised_at, publised_until)
