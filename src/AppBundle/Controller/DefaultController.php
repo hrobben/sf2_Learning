@@ -5,9 +5,20 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Task;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class DefaultController extends Controller
 {
+    /**
+     * @Route("/admin")
+     */
+    public function adminAction()
+    {
+        return new Response('Admin page!');
+    }
+
     public function newAction(Request $request)
     {
         // just setup a fresh $task object (remove the dummy data)

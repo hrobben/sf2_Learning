@@ -1,6 +1,15 @@
 security:
+    encoders:
+        AppBundle\Entity\User:
+            algorithm: bcrypt
 
     providers:
+        our_db_provider:
+            entity:
+                class: AppBundle:User
+                # property: username           // removed...
+                # if you're using multiple entity managers
+                # manager_name: customer
         in_memory:
             memory: ~
 
@@ -9,5 +18,17 @@ security:
             pattern: ^/(_(profiler|wdt|error)|css|images|js)/
             security: false
 
+        default:
+            anonymous: ~
+            http_basic: ~
+            provider: our_db_provider
+            form_login:
+                login_path: /login
+                check_path: /login_check
+
         main:
             anonymous: ~
+
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/admin, roles: ROLE_ADMIN }
