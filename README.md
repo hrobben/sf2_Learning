@@ -1,7 +1,7 @@
 my_project
 ==========
 
-A Symfony project created on June 20, 2015, 5:18 pm.
+A Symfony project created on June 20, 2015, 5:18 pm. (Only testing use).
 
 While reading the SF2 site, started reading the book and did the testing on "my_project".
 
@@ -148,7 +148,7 @@ Unit testing and Functional testing.
  
  Look in the book [validations] (http://symfony.com/doc/current/book/validation.html)
  
-#Start testing dbase, login for a blog
+#Start testing dbase, login for a blog (todo)
  
 Trying to implement the knowledge into a blog sit.
 
@@ -157,3 +157,9 @@ Trying to implement the knowledge into a blog sit.
  - User => fields auto id increment (username, password, first_name, last_name, role, register_date, last_login_date, avatar)
 
  - Articles => fields auto id increment (user_id, title, article, created_at, publised_at, publised_until)
+ 
+#Testing use of bootstrap with symfony 2
+
+Testing implement a build with use of bootstrap to make blog responsive.
+
+looking into [http://bootstrap.braincrafted.com/] (http://bootstrap.braincrafted.com/)
